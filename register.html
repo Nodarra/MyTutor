@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>iTutor</title>
+
+    <meta charset="UTF-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="body">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" id="brand"><img class="logo" src="icons/books-stack-of-three.svg">iTutor</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subjects</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Mathematics</a>
+                        <a class="dropdown-item" href="#">Physics</a>
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">German</a>
+                        <a class="dropdown-item" href="#">Painting</a>
+                        <a class="dropdown-item" href="#">Music</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container register">
+        <div class="row">
+        <form class="col-md-6" action="insert.php" method="POST">
+            <h3 class="contact-element" name="name">Name</h3 class="contact-element">
+            <input type="text" class="Name" placeholder="Your name" required>
+            
+            <h3 class="contact-element">Email</h3>
+            <input type="text" class="email" placeholder="Your email" name="email" required>
+
+            <h3 class="contact-element">Subject you want to teach</h3>
+            <select name="select" required>
+                <option>Math</option>
+                <option>Physics</option>
+                <option>Music</option>
+                <option>English</option>
+                <option>German</option>
+                <option>Painting</option>
+            </select>
+
+            <h3 class="contact-element">Description</h3>
+            
+            <textarea name="description" placeholder="Description" required></textarea>
+
+            <h3 class="contact-element">Cost of your tutoring per hour</h3>
+            <input name="cost" type="number" min = 1>
+            <br>
+            <br>
+
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+
+        </form>
+        <div class="col-md-6">
+            <h3 class="contact-element">Find us at</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4947.748768568023!2d18.303155242926962!3d43.81624324584133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758ca0ecd65b11b%3A0x4f23ce3443943b85!2sHrasni%C4%8Dka%20cesta%2015%2C%20Ilid%C5%BEa!5e0!3m2!1sen!2sba!4v1578651627195!5m2!1sen!2sba" 
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        </div>
+
+    </div>
+</body>
+</html>
